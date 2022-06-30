@@ -294,6 +294,8 @@ impl Board {
     pub fn clamp_to_board(pos: &mut Vec3) {
         let (xp, yp) = coords_to_pixel(pos.x, pos.y);
 
-        (pos.x, pos.y) = coords_to_world(xp.clamp(0, BOARD_WIDTH as i32 - 1) as f32, yp.max(0) as f32);
+        let (cxw, cyw) = coords_to_world(xp.clamp(0, BOARD_WIDTH as i32 - 1) as f32, yp.max(0) as f32);
+        pos.x = cxw;
+        pos.y = cyw;
     } 
 }
