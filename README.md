@@ -1,7 +1,7 @@
 # bevy-tetris
 A version of Tetris created in the Bevy game engine with Rust
 
-NOTE: The game is mostly being developed on Linux. There is a win branch for Window, but it might be more unstable or have inconsistencies.
+NOTE: The game is mostly being developed on Linux. There is a [win branch](https://github.com/Kippye/bevy-tetris/tree/win) for Windows, but it might be more unstable or have inconsistencies.
 
 Controls:
 - LEFT, RIGHT, DOWN to move pieces
